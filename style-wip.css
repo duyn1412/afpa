@@ -1,0 +1,1545 @@
+:root {
+  --afpa-blue: #073a78;
+  --afpa-blue-dark: #061d3c;
+  --afpa-cyan: #3bc8ec;
+  --afpa-ink: #053779;
+  --afpa-footer: #23282b;
+  --afpa-text: #0b2240;
+  --afpa-bg-light: #f8f9fa;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-22 {
+  margin-bottom: 22px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+body {
+  color: var(--afpa-text);
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+.navbar,
+.btn,
+.section-kicker {
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.site-header,
+.navbar {
+  background: var(--afpa-blue);
+}
+
+.navbar {
+  min-height: 110px;
+  transition: min-height 0.3s ease, box-shadow 0.3s ease;
+}
+
+.site-header.scrolled .navbar {
+  min-height: 68px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand:hover,
+.footer-brand:hover {
+  color: #fff;
+}
+
+.site-logo {
+  display: block;
+  width: 164px;
+  height: auto;
+}
+
+.navbar .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.75rem 0;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  color: #fff;
+}
+
+.navbar .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar .dropdown-chevron {
+  margin-left: 6px;
+  font-size: 0.78em;
+  transition: transform 0.2s ease;
+}
+
+.navbar .dropdown-toggle.show .dropdown-chevron {
+  transform: rotate(180deg);
+}
+
+.navbar .dropdown-menu {
+  --bs-dropdown-link-active-bg: var(--afpa-blue);
+  --bs-dropdown-link-active-color: #fff;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.navbar .dropdown-item {
+  color: var(--afpa-ink);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.navbar .dropdown-item:hover,
+.navbar .dropdown-item:focus {
+  background: rgba(7, 58, 120, 0.08);
+  color: var(--afpa-ink);
+}
+
+
+
+.btn {
+  --bs-btn-font-weight: 600;
+  --bs-btn-padding-y: 0.55rem;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--afpa-blue);
+  --bs-btn-border-color: var(--afpa-blue);
+  --bs-btn-hover-bg: #052f62;
+  --bs-btn-hover-border-color: #052f62;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--afpa-blue);
+  --bs-btn-border-color: var(--afpa-blue);
+  --bs-btn-hover-bg: var(--afpa-blue);
+  --bs-btn-hover-border-color: var(--afpa-blue);
+}
+
+.hero {
+  min-height: 650px;
+  background:
+    linear-gradient(90deg, rgba(11, 29, 43, 0.78), rgba(11, 29, 43, 0.58)),
+    url("images/hero 1.png") center right / cover;
+}
+
+.display-2 {
+  max-width: 769px;
+  font-size: clamp(3.2rem, 6vw, 5.2rem);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.section-pad {
+  padding: 68px 0;
+}
+
+.section-kicker {
+  margin-bottom: 16px;
+  color: #1e8cff;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.section-title {
+  color: var(--afpa-ink);
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 700;
+  line-height: 1;
+}
+
+.purpose-img,
+.magazine-img,
+.feature-card img,
+.news-card img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.purpose-img,
+.magazine-img {
+  aspect-ratio: 1.45 / 1;
+}
+
+.purpose-col {
+  max-width: 526px;
+}
+
+.feature-card img,
+.news-card img {
+  aspect-ratio: 1.42 / 1;
+  border-radius: 25px;
+}
+
+.feature-card h3,
+.news-card h3 {
+  color: var(--afpa-ink);
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.05;
+}
+
+.feature-card p {
+  margin-bottom: 16px;
+  color: #254665;
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.link-more {
+  color: var(--afpa-ink);
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-section {
+  background: #061f40;
+}
+
+.news-slider {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+
+.news-card {
+  padding: 0 12px;
+}
+
+.news-card .badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #053779 !important;
+  font-size: 11px;
+}
+
+.news-card time {
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 12px;
+}
+
+.news-card h3 {
+  color: #fff;
+  margin-bottom: 18px;
+}
+
+.news-nav {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 48px;
+}
+
+.news-btn {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  transition: background 0.2s, color 0.2s;
+}
+
+.news-btn:hover {
+  background: #fff;
+  color: #061f40;
+}
+
+.join-band {
+  position: relative;
+  overflow: hidden;
+  padding: 106px 0;
+  background: var(--afpa-blue);
+}
+
+.join-band::before {
+  content: none;
+}
+
+.join-band p:not(.section-kicker) {
+  max-width: 720px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer {
+  background: var(--afpa-footer);
+  border-top: 1px solid #343A40;
+  padding: 44px 0 64px;
+}
+
+.site-footer p,
+.site-footer a,
+.site-footer span {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  color: #fff;
+}
+
+.footer-menu li+li,
+.footer-contact li+li {
+  margin-top: 16px;
+}
+
+.footer-menu a {
+  color: #fff;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.footer-contact li {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr);
+  gap: 14px;
+}
+
+.footer-contact i,
+.socials a {
+  color: #6C757D;
+}
+
+.socials a {
+  display: grid;
+  /* width: 22px; */
+  /* height: 22px; */
+  place-items: center;
+  font-size: 27px;
+}
+
+.copyright {
+  margin-top: 55px;
+  color: rgba(255, 255, 255, 0.42) !important;
+  padding-top: 20px;
+  border-top: solid 1px #343A40;
+}
+
+.sponsor-strip {
+  display: flex;
+  padding: 20px 0;
+  align-items: center;
+  background: var(--afpa-footer);
+}
+
+.sponsor-label {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+}
+
+.sponsor-link {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.sponsor-link:hover {
+  opacity: 1;
+}
+
+.sponsor-logo {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.sponsor-logo-bank {
+  height: 70px;
+  width: auto;
+  width: w;
+}
+
+.sponsor-logo-health {
+  width: auto;
+  height: 70px;
+}
+
+
+/* Typography overrides from Figma export */
+body {
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+h1,
+h2,
+h3,
+.navbar,
+.btn,
+.section-kicker {
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+.navbar .nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.navbar .dropdown-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.btn {
+  --bs-btn-font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.display-2 {
+  font-size: 72px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  display: inline-block;
+}
+
+.section-kicker {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+a.link-more.dark.text-white {
+  background: #061f40;
+  border-color: #061f40;
+  padding-left: 0;
+}
+
+.pb-34 {
+  padding-bottom: 34px;
+}
+
+.slick-arrow:hover {
+  background: #fff;
+  color: #061f40;
+}
+
+.section-title {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.feature-card h3,
+.news-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.feature-card p,
+.site-footer p,
+.copyright {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.link-more {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+  border-radius: 6px;
+  border: 1px solid var(--afpa-bg-light);
+  background: var(--Blue-100, #E7F1FF);
+  padding: 6px 12px;
+  display: inline-flex;
+  padding: 6px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.join-bg {
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 905px;
+  height: auto;
+  z-index: 100;
+  filter: blur(6px);
+}
+
+.container.position-relative {
+  z-index: 101;
+}
+
+a.link-more:hover i {
+  transform: translateX(5px);
+}
+
+a.link-more i {
+  transition: all 0.2s;
+}
+
+.news-card time {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.news-card .badge {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+
+#benefits .text-body-secondary,
+.join-band p:not(.section-kicker) {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.footer-menu a,
+.footer-contact a,
+.footer-contact span {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+footer img.site-logo {
+  width: 209px;
+}
+
+
+
+@media (max-width: 991.98px) {
+  .navbar {
+    min-height: 72px;
+  }
+
+  .hero {
+    min-height: 520px;
+    background-position: center;
+  }
+
+  .section-pad {
+    padding: 56px 0;
+  }
+
+  .join-band {
+    padding: 72px 0;
+  }
+
+  .display-2 {
+    font-size: 48px;
+  }
+
+  .section-title {
+    font-size: 40px;
+  }
+
+  .section-kicker {
+    font-size: 12px;
+  }
+
+  .btn {
+    font-size: 16px;
+  }
+
+  .feature-card h3,
+  .news-card h3 {
+    font-size: 20px;
+  }
+
+  #benefits .text-body-secondary,
+  .join-band p:not(.section-kicker) {
+    font-size: 17px;
+  }
+
+  .site-footer p,
+  .site-footer a,
+  .site-footer span {
+    font-size: 16px;
+  }
+
+  .footer-menu a,
+  .footer-contact a,
+  .footer-contact span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .site-logo {
+    width: 118px;
+  }
+
+  .display-2 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-pad {
+    padding: 44px 0;
+  }
+
+  .join-band {
+    padding: 52px 0;
+  }
+
+  .btn {
+    font-size: 15px;
+  }
+
+  .section-kicker {
+    font-size: 11px;
+  }
+
+  .feature-card h3,
+  .news-card h3 {
+    font-size: 18px;
+  }
+
+  .feature-card p,
+  .link-more {
+    font-size: 14px;
+  }
+
+  #benefits .text-body-secondary,
+  .join-band p:not(.section-kicker) {
+    font-size: 15px;
+  }
+
+  .site-footer p,
+  .site-footer a,
+  .site-footer span {
+    font-size: 14px;
+  }
+
+  .footer-menu a,
+  .footer-contact a,
+  .footer-contact span {
+    font-size: 14px;
+  }
+
+  .hero {
+    min-height: 460px;
+  }
+}
+
+/* ─── Media Queries ─────────────────────────────── */
+
+@media (min-width: 992px) {
+  .navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .navbar .dropdown:hover>.dropdown-toggle .dropdown-chevron {
+    transform: rotate(180deg);
+  }
+}
+
+/* Style page */
+.style-page {
+  background: #fff;
+}
+
+.style-page-hero {
+  min-height: 300px;
+}
+
+.style-page-hero-image {
+  background:
+    linear-gradient(90deg, rgba(8, 34, 58, 0.75), rgba(8, 34, 58, 0.5)),
+    url("images/hero 1.png") center right / cover;
+}
+
+.style-page-hero-solid {
+  min-height: 275px;
+  background: var(--afpa-blue);
+}
+
+.style-page .breadcrumb {
+  --bs-breadcrumb-divider-color: rgba(255, 255, 255, 0.72);
+  --bs-breadcrumb-item-active-color: rgba(255, 255, 255, 0.72);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.style-page .breadcrumb a {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+}
+
+.style-page-title,
+.style-content-title,
+.style-list-title,
+.style-cta-title {
+  color: var(--afpa-ink);
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.style-page-section {
+  padding: 68px 0;
+}
+
+.style-page-section p,
+.style-bullet-list,
+.style-number-list {
+  color: var(--afpa-ink);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.style-placeholder {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #d9d9d9;
+}
+
+.style-placeholder img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.style-placeholder-wide {
+  aspect-ratio: 3.7 / 1;
+  min-height: 350px;
+}
+
+.style-placeholder-square {
+  aspect-ratio: 1 / 1;
+}
+
+.style-placeholder-cta {
+  aspect-ratio: 4:3;
+}
+
+.style-content-row {
+  --bs-gutter-x: 110px;
+  --bs-gutter-y: 48px;
+}
+
+.style-bullet-list,
+.style-number-list {
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.style-bullet-list li + li,
+.style-number-list li + li {
+  margin-top: 8px;
+}
+
+.style-cta {
+  padding: 76px 0;
+}
+
+.style-cta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.style-cta-stack-start {
+  align-items: flex-start;
+}
+
+.style-cta-stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.style-cta-stack > p:not(.section-kicker) {
+  max-width: 760px;
+}
+
+.style-cta-dark {
+  background: var(--afpa-blue);
+}
+
+.style-cta-image {
+  background:
+    linear-gradient(rgba(7, 58, 120, 0.78), rgba(7, 58, 120, 0.78)),
+    url("images/call.png") center / cover;
+}
+
+.style-cta-light {
+  position: relative;
+  overflow: hidden;
+  background: var(--afpa-bg-light);
+  margin: 37px 0;
+}
+
+.style-cta-light::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: min(260px, 42vw);
+  height: min(260px, 42vw);
+  background: url("images/block-light-cta.png") center / contain no-repeat;
+  content: "";
+}
+
+.style-cta-light .container {
+  position: relative;
+}
+
+.style-cta-split {
+  padding: 72px 0;
+  background: var(--afpa-bg-light);
+  margin-bottom: 37px;
+}
+
+.style-cta-row {
+  --bs-gutter-x: 131px;
+  --bs-gutter-y: 48px;
+}
+
+.style-cta-split-alt {
+  background: var(--afpa-bg-light);
+  margin-bottom: 37px;
+}
+
+.style-list-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.style-item-card {
+  position: relative;
+  border-color: #d9e2ef;
+  border-radius: 12px;
+  box-shadow: 0 14px 28px rgba(0, 47, 108, 0.08);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  padding: 24px;
+}
+
+.style-item-card:hover {
+  border-color: var(--afpa-blue);
+  box-shadow: 0 18px 36px rgba(0, 47, 108, 0.14);
+  transform: translateY(-2px);
+}
+
+.style-item-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 0;
+  margin-top: 24px;
+}
+
+.style-item-card .card-body > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.style-item-card .card-img-top,
+.style-free-item img {
+  width: 100%;
+  /* aspect-ratio: 1.42 / 1; */
+  object-fit: cover;
+}
+
+.style-card-title {
+  color: var(--afpa-ink);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.style-free-item img {
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
+
+.style-free-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.style-free-item > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.style-center-copy {
+  max-width: 980px;
+}
+
+
+.container {
+    z-index: 101;
+    position: relative;
+}
+section.style-cta-split::before {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    width: min(476px, 42vw);
+    height: min(450px, 42vw);
+    background: url(images/cta-left-bg.png) center / contain no-repeat;
+    content: "";
+}
+
+section.style-cta-split.right::before {
+    left:0;
+    top:-5px;
+   background:  url(images/cta-left-icon.png) center / contain no-repeat;
+    content: "";
+}
+
+section.style-cta-split {
+    position: relative;
+}
+.light p.section-kicker {
+    color: var(--afpa-ink);
+}
+
+
+@media (max-width: 991.98px) {
+  .style-page-hero,
+  .style-page-hero-solid {
+    min-height: 240px;
+  }
+
+  .style-page-title,
+  .style-content-title,
+  .style-list-title,
+  .style-cta-title {
+    font-size: 40px;
+  }
+
+  .style-placeholder-wide {
+    min-height: 260px;
+  }
+
+  .style-cta,
+  .style-cta-split,
+  .style-page-section {
+    padding: 56px 0;
+  }
+
+  .style-cta-row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 48px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .style-page-title,
+  .style-content-title,
+  .style-list-title,
+  .style-cta-title {
+    font-size: 32px;
+  }
+
+  .style-placeholder-wide {
+    min-height: 190px;
+  }
+}
+
+
+/* ============================================================
+   FORM PAGE — form.html
+   Styles matching the AFPA mockup design
+   ============================================================ */
+
+/* ── 1. HERO SECTION (background image + overlay) ───────────
+   Reuses .style-page-hero-image, but overrides the
+   title font-size to match the large heading in the mockup
+   ─────────────────────────────────────────────────────────── */
+.style-page-hero-image .style-page-title {
+  /* Page title — bold, white, large */
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  color: #fff;
+  margin-top: 8px;
+}
+
+/* Breadcrumb inside the hero — semi-transparent white */
+.style-page-hero .breadcrumb-item a,
+.style-page-hero .breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 13px;
+}
+
+/* ── 2. WRAPPER BODY — main content area ────────────────────
+   White background with generous top/bottom padding
+   ─────────────────────────────────────────────────────────── */
+.wrapper-body {
+  background: #fff;
+  padding: 48px 0 64px;
+}
+
+/* ── 3. BREADCRUMB inside wrapper-body ──────────────────────
+   Secondary breadcrumb (inside page content) — small,
+   lightweight, no background
+   ─────────────────────────────────────────────────────────── */
+.wrapper-body .breadcrumb {
+  --bs-breadcrumb-divider-color: #6c757d;
+  --bs-breadcrumb-item-active-color: #6c757d;
+  font-size: 13px;
+  padding: 0;
+  margin-bottom: 8px;
+  background: transparent;
+}
+
+.wrapper-body .breadcrumb-item a {
+  color: var(--afpa-blue);
+  text-decoration: none;
+}
+
+.wrapper-body .breadcrumb-item a:hover {
+  text-decoration: underline;
+}
+
+/* ── 4. PAGE CONTENT — About section + Download button ──────
+   "About Additional Insurance" heading in AFPA blue,
+   body text, and a Download button with arrow icon
+   ─────────────────────────────────────────────────────────── */
+
+/* Section heading — first h2 inside .row.m-text-full */
+.row.m-text-full > .col h2 {
+  color: var(--afpa-blue);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Body / description text */
+.row.m-text-full > .col p {
+  color: var(--afpa-text);
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+/* Container for the Download button */
+.m-text-img-buttons {
+  margin-top: 20px;
+}
+
+/* Download Application Form button — AFPA blue, small rounded corners */
+.m-text-img-buttons .btn-primary {
+  background-color: var(--afpa-blue);
+  border-color: var(--afpa-blue);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.m-text-img-buttons .btn-primary:hover {
+  background-color: #052f62;
+  border-color: #052f62;
+  box-shadow: 0 4px 12px rgba(7, 58, 120, 0.3);
+}
+
+/* Arrow icon to the right of the Download button */
+.m-text-img-buttons .icon-arrow-right::before {
+  content: "→";
+  font-style: normal;
+}
+
+/* ── 5. ENTITY FORM PANEL — main form wrapper ───────────────
+   Clean white background, subtle border, soft shadow,
+   generous padding — matching the mockup
+   ─────────────────────────────────────────────────────────── */
+#EntityFormPanel {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 28px 32px 32px;
+  margin-top: 28px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* ── 6. VALIDATION SUMMARY — error alert box ────────────────
+   Shown when form submission fails. Matches the mockup:
+   - Light red border
+   - Soft pink background
+   - Warning icon on the left
+   - Close (×) button on the right
+   ─────────────────────────────────────────────────────────── */
+.validation-summary.alert-danger {
+  background-color: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  color: #721c24;
+  padding: 14px 18px;
+  font-size: 14px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+/* Error heading inside validation summary — bold */
+.validation-summary.alert-danger strong,
+.validation-summary.alert-danger b {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 6px;
+}
+
+/* Error list inside validation summary */
+.validation-summary.alert-danger ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.validation-summary.alert-danger ul li {
+  margin-bottom: 3px;
+}
+
+.validation-summary.alert-danger ul li a {
+  color: #721c24;
+  text-decoration: underline;
+}
+
+.validation-summary.alert-danger ul li a:hover {
+  color: #491217;
+}
+
+/* ── 7. FORM TABLE / SECTION LAYOUT ────────────────────────
+   The form uses a <table> for layout. Reset table defaults
+   so it looks like a modern form layout.
+   ─────────────────────────────────────────────────────────── */
+
+/* Remove all default table borders; collapse for clean layout */
+.entity-form table.section {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Each cell holds one field — bottom padding adds spacing between fields */
+.entity-form table.section td.cell {
+  padding-bottom: 20px;
+  vertical-align: top;
+}
+
+/* Empty spacer cell (zero-cell) — no padding, zero width */
+.entity-form table.section td.zero-cell {
+  padding: 0;
+  width: 0;
+}
+
+/* ── 8. FIELD LABEL ─────────────────────────────────────────
+   Small, semi-bold, dark label — matching the mockup.
+   Required fields show a red * asterisk.
+   ─────────────────────────────────────────────────────────── */
+.entity-form .field-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--afpa-text);
+  margin-bottom: 6px;
+}
+
+/* Required * asterisk inside the validators span (shown/hidden by JS) */
+.entity-form .validators span {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+/* Label + validators wrapper:
+   Using flexbox so the label and * sit on the same line
+   without any unwanted inline whitespace between them.
+   The .validators span is shown/hidden by JS and takes no
+   space when hidden. */
+.entity-form .table-info {
+  display: flex;
+  align-items: baseline;
+  gap: 2px;       /* small gap between label text and * asterisk */
+  margin-bottom: 4px;
+}
+
+/* Validators wrapper — shrinks to fit its content only */
+.entity-form .table-info .validators {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* ── 9. FORM CONTROLS — input, select ───────────────────────
+   All inputs and selects share the same height, grey border,
+   and AFPA blue focus highlight — matching the mockup.
+   ─────────────────────────────────────────────────────────── */
+.entity-form .form-control,
+.entity-form .form-select {
+  height: 44px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 14px;
+  color: var(--afpa-text);
+  background-color: #fff;
+  padding: 10px 14px;
+  width: 100%;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.entity-form .form-control:focus,
+.entity-form .form-select:focus {
+  border-color: var(--afpa-blue);
+  box-shadow: 0 0 0 3px rgba(7, 58, 120, 0.12);
+  outline: none;
+}
+
+/* Placeholder text — light grey */
+.entity-form .form-control::placeholder {
+  color: #adb5bd;
+}
+
+/* Select dropdown:
+   The element carries both form-control and form-select classes.
+   Bootstrap's form-select already injects a chevron via background-image.
+   Setting appearance: none prevents the browser from rendering a second
+   native arrow on top of Bootstrap's SVG arrow. */
+.entity-form select.form-control.form-select,
+.entity-form .form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* ── 10. FIELDSET — Spouse Details section ──────────────────
+   Fieldset with "Spouse Details" legend heading in AFPA blue.
+   Remove the browser's default fieldset border.
+   ─────────────────────────────────────────────────────────── */
+.entity-form fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hide the default legend element (text is rendered via the h3 inside it) */
+.entity-form fieldset.section-title legend,
+.entity-form fieldset > legend {
+  font-size: 0; /* visually hidden; content is in the child h3 */
+  padding: 0;
+  margin: 0;
+}
+
+/* h3 inside the legend — "Spouse Details" in AFPA blue, medium size */
+.entity-form fieldset > legend h3,
+.entity-form fieldset .section-title h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--afpa-blue);
+  margin: 20px 0 12px;
+}
+
+/* ── 11. DATEPICKER / DATE INPUT WRAPPER ────────────────────
+   D.O.B. date input with a calendar icon button on the right
+   ─────────────────────────────────────────────────────────── */
+.entity-form .input-group.datetimepicker {
+  display: flex;
+  align-items: stretch;
+}
+
+.entity-form .input-group.datetimepicker .form-control {
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Calendar toggle button — sits flush against the input */
+.entity-form .input-group-addon.btn {
+  border: 1px solid #ced4da;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  background: #f8f9fa;
+  padding: 0 12px;
+  cursor: pointer;
+  color: var(--afpa-text);
+  display: flex;
+  align-items: center;
+  transition: background 0.15s ease;
+}
+
+.entity-form .input-group-addon.btn:hover {
+  background: #e9ecef;
+  color: var(--afpa-blue);
+}
+
+/* ── 12. FILE UPLOAD AREA ────────────────────────────────────
+   Dashed border drop zone, centred upload button,
+   light grey background — matching the mockup
+   ─────────────────────────────────────────────────────────── */
+
+/* "Application Form" label above the upload zone */
+#NewAttachFileLabel {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--afpa-text);
+  margin-bottom: 6px;
+}
+
+/* File size / type description text */
+.file-cell .table-info {
+  font-size: 12px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+/* Main upload drop zone container */
+.ContainerForFile {
+  border: 2px dashed #ced4da;
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 28px 20px;
+  text-align: center;
+  transition: border-color 0.2s ease, background 0.2s ease;
+  cursor: pointer;
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.ContainerForFile:hover {
+  border-color: var(--afpa-blue);
+  background: #eef4fb;
+}
+
+/* Upload button wrapper inside the drop zone */
+.buttonForFileUpload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* "↑ Upload" ghost button — small, outlined style */
+#UploadButton {
+  border: 1px solid #ced4da;
+  background: #fff;
+  color: var(--afpa-text);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+#UploadButton:hover {
+  border-color: var(--afpa-blue);
+  background: #eef4fb;
+  color: var(--afpa-blue);
+}
+
+/* Up-arrow icon inside the Upload button */
+#UploadButton .fa-arrow-up {
+  font-size: 13px;
+}
+
+/* File list display shown after files are selected */
+.file-info {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #495057;
+}
+
+/* Inline error alert shown when an upload fails */
+.errordiv.alert-danger {
+  background: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  border-radius: 5px;
+  color: #721c24;
+  font-size: 13px;
+  padding: 8px 14px;
+  margin-top: 8px;
+  text-align: left;
+}
+
+/* ── 13. FILE CELL — full upload section wrapper ────────────
+   .file-cell is a div-based row cell (.tr > .file-cell)
+   ─────────────────────────────────────────────────────────── */
+.tr {
+  padding-top: 4px;
+}
+
+.file-cell {
+  padding-bottom: 24px;
+}
+
+/* ── 14. ACTIONS — Submit / Reset buttons ───────────────────
+   Flex row containing the primary Submit button and the
+   secondary Reset button, separated by a top border
+   ─────────────────────────────────────────────────────────── */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+/* Submit button — solid AFPA blue, primary action */
+#InsertButton,
+.submit-btn {
+  background-color: var(--afpa-blue);
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 28px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  letter-spacing: 0.02em;
+}
+
+#InsertButton:hover,
+.submit-btn:hover {
+  background-color: #052f62;
+  box-shadow: 0 4px 12px rgba(7, 58, 120, 0.28);
+}
+
+/* Reset button — outlined, secondary style */
+input[type="reset"],
+button.reset-btn,
+.actions [value="Reset"],
+.actions [name*="Reset"] {
+  background: #fff;
+  border: 1px solid #ced4da;
+  color: var(--afpa-text);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+input[type="reset"]:hover,
+.actions [value="Reset"]:hover {
+  border-color: #999;
+  background: #f8f9fa;
+}
+
+/* ── 15. .entity-form — outermost form container ────────────
+   Ensures the form spans the full available width
+   ─────────────────────────────────────────────────────────── */
+.entity-form {
+  width: 100%;
+}
+
+/* ── 16. .crmEntityFormView ─────────────────────────────────
+   Outer wrapper for the CRM entity form — full width,
+   no special visual styling needed
+   ─────────────────────────────────────────────────────────── */
+.crmEntityFormView {
+  width: 100%;
+}
+
+/* ── 17. .page-heading ──────────────────────────────────────
+   Page title wrapper (empty in form.html, reserved for
+   dynamic content injected by the CRM portal)
+   ─────────────────────────────────────────────────────────── */
+.page-heading {
+  margin-bottom: 8px;
+}
+
+/* ── 18. RESPONSIVE — Mobile adjustments ────────────────────
+   On small screens: reduce form padding and button sizing
+   ─────────────────────────────────────────────────────────── */
+@media (max-width: 767.98px) {
+  #EntityFormPanel {
+    padding: 20px 16px 24px;
+  }
+
+  .wrapper-body {
+    padding: 32px 0 48px;
+  }
+
+  .m-text-img-buttons .btn-primary {
+    font-size: 13px;
+    padding: 9px 16px;
+  }
+}
+

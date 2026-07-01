@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Style Page - AFPA</title>
+  <meta name="description" content="AFPA style page template using Bootstrap 5.2.2 components and local assets.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS: Bootstrap 5.2.2, Bootstrap Icons, Font Awesome, Swiper -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Custom CSS for portal upload -->
+  <link href="style-wip.css" rel="stylesheet">
+</head>
+
+<body class="style-page">
+  <!-- Header / Navigation -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-xl navbar-dark py-0">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img class="site-logo" src="images/Logo-Light 1.svg" alt="AFPA - Australian Federal Police Association">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html#about" id="aboutDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                About Us <i class="bi bi-chevron-down dropdown-chevron" aria-hidden="true"></i>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li><a class="dropdown-item" href="index.html#about">Our Purpose</a></li>
+                <li><a class="dropdown-item" href="#">Leadership Team</a></li>
+                <li><a class="dropdown-item" href="#">Governance</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html#news">News</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#campaigns">Campaigns</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#benefits">Member Benefits</a></li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row gap-2 ms-lg-4 py-3 py-lg-0">
+            <a class="btn btn-outline-light btn-sm rounded-pill px-4" href="#contact">Contact Us</a>
+            <a class="btn btn-light btn-sm rounded-pill px-4" href="#join">Join AFPA</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Hero With Image -->
+    <section class="style-page-hero style-page-hero-image d-flex align-items-center">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-16">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Inner</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Page title</li>
+          </ol>
+        </nav>
+        <h1 class="style-page-title text-white mb-0">Page title with image</h1>
+      </div>
+    </section>
+
+    <!-- Page Hero Solid -->
+    <section class="style-page-hero-solid d-flex align-items-center">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb mb-16">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Inner</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Page title</li>
+          </ol>
+        </nav>
+        <h2 class="style-page-title text-white mb-0">Page title with image</h2>
+      </div>
+    </section>
+
+    <!-- Content Hero -->
+    <section class="style-page-section">
+      <div class="container">
+        <div class="style-placeholder style-placeholder-wide mb-40">
+          <img src="images/hero 1.png" alt="Police officers on duty">
+        </div>
+        <h2 class="style-content-title mb-40">Content - Hero With Image</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat libero. Praesent feugiat tellus a urna commodo, a molestie leo fringilla. Donec eu arcu ultricies, venenatis nisl eget, porttitor arcu.</p>
+        <ul class="style-bullet-list">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+          <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+        </ul>
+          <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+         <ul class="style-bullet-list">
+          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+          <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Right Aligned Content -->
+    <section class="style-page-section pt-0">
+      <div class="container">
+        <div class="row style-content-row">
+          <div class="col-lg-5">
+            <div class="style-placeholder style-placeholder-square">
+              <img src="images/Rectangle 22.png" alt="Police members walking together">
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="style-content-title">Right aligned content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat libero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat lectus. Praesent feugiat tellus in enim convallis, a molestie risus fringilla. Donec eu sem ultricies, venenatis nisl eget, porttitor ante. Fusce ac arcu enim. Ut nec risus nec augue sagittis egestas vitae et libero. Aliquam mauris diam, interdum non libero in, ultricies fringilla augue. Nunc eget nisi at nisi euismod lacinia. Vestibulum purus dui, molestie ut condimentum ac, tristique nec est. Integer est odio, elementum tempus massa ut, accumsan faucibus nulla. Vivamus vitae eleifend est. Aenean pharetra dui ut rutrum imperdiet.</p>
+            <ul class="style-bullet-list">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+              <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+               <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Left Aligned Content -->
+    <section class="style-page-section pt-0">
+      <div class="container">
+        <div class="row style-content-row">
+          <div class="col-lg-7">
+            <h2 class="style-content-title">Right aligned content</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat libero.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat lectus. Praesent feugiat tellus in enim convallis, a molestie risus fringilla. Donec eu sem ultricies, venenatis nisl eget, porttitor ante. Fusce ac arcu enim. Ut nec risus nec augue sagittis egestas vitae et libero. Aliquam mauris diam, interdum non libero in, ultricies fringilla augue. Nunc eget nisi at nisi euismod lacinia. Vestibulum purus dui, molestie ut condimentum ac, tristique nec est. Integer est odio, elementum tempus massa ut, accumsan faucibus nulla. Vivamus vitae eleifend est. Aenean pharetra dui ut rutrum imperdiet.</p>
+            <ul class="style-bullet-list">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+              <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+                 <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <div class="style-placeholder style-placeholder-square">
+              <img src="images/Rectangle 2.png" alt="Police motorcycle in motion">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Dark -->
+    <section class="style-cta style-cta-dark text-center text-white" id="join">
+      <div class="container style-cta-stack">
+        <p class="section-kicker text-white">We Support You</p>
+        <h2 class="style-cta-title text-white">Call to action block Dark</h2>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+        <a class="btn btn-light rounded-pill px-5" href="#">Join Now</a>
+      </div>
+    </section>
+
+    <!-- CTA Background Image -->
+    <section class="style-cta style-cta-image text-center text-white">
+      <div class="container style-cta-stack">
+        <p class="section-kicker text-white">We Support You</p>
+        <h2 class="style-cta-title text-white">Call to action block with Background image</h2>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+        <a class="btn btn-light rounded-pill px-5" href="#">Join Now</a>
+      </div>
+    </section>
+
+    <!-- CTA Light -->
+    <section class="style-cta style-cta-light light text-center">
+      <div class="container style-cta-stack">
+        <p class="section-kicker">We Support You</p>
+        <h2 class="style-cta-title">Call to action block Light</h2>
+        <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+        <a class="btn btn-primary rounded-pill px-5" href="#">Join Now</a>
+      </div>
+    </section>
+
+    <!-- CTA Left -->
+    <section class="style-cta-split light">
+      <div class="container">
+        <div class="row align-items-center style-cta-row">
+          <div class="col-lg-7 style-cta-stack style-cta-stack-start">
+            <p class="section-kicker">We Support You</p>
+            <h2 class="style-cta-title">Call to action Left Aligned</h2>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+            <a class="btn btn-primary rounded-pill px-5" href="#">Join Now</a>
+          </div>
+          <div class="col-lg-5">
+            <div class="style-placeholder style-placeholder-cta">
+              <img src="images/call.png" alt="Police member taking a phone call">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Right -->
+    <section class="style-cta-split right style-cta-split-alt light">
+      <div class="container">
+        <div class="row align-items-center style-cta-row">
+          <div class="col-lg-5">
+            <div class="style-placeholder style-placeholder-cta">
+              <img src="images/bl-police.png" alt="Police officer on duty">
+            </div>
+          </div>
+          <div class="col-lg-7 style-cta-stack style-cta-stack-start">
+            <p class="section-kicker">We Support You</p>
+            <h2 class="style-cta-title">Call to action Right Aligned</h2>
+            <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam.</p>
+            <a class="btn btn-primary rounded-pill px-5" href="#">Join Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Boxed Cards -->
+    <section class="style-page-section text-center">
+      <div class="container">
+        <h2 class="style-list-title">Boxed List item with images and bullets</h2>
+        <div class="row g-4 text-start">
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <img src="images/Rectangle 3123.png" class="card-img-top" alt="Police officer from behind">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                  <li>Aenean vel quam laoreet dictum.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <img src="images/Rectangle 3123.png" class="card-img-top" alt="Police officer from behind">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                  <li>Aenean vel quam laoreet dictum.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <img src="images/Rectangle 3123.png" class="card-img-top" alt="Police officer from behind">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                  <li>Aenean vel quam laoreet dictum.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Free Cards -->
+    <section class="style-page-section pt-0 text-center">
+      <div class="container">
+        <h2 class="style-list-title">Free List item with images and bullets</h2>
+        <div class="row g-4 text-start">
+          <div class="col-md-4">
+            <article class="style-free-item">
+              <img src="images/Rectangle 3123.png" alt="Police officer from behind">
+              <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+              <ol class="style-number-list">
+                <li>Praesent porttitor nulla at lectus sagittis.</li>
+                <li>Nullam eget justo nec ipsum tincidunt.</li>
+                <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+              </ol>
+              <a class="link-more" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="style-free-item">
+              <img src="images/Rectangle 3123.png" alt="Police officer from behind">
+              <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+              <ol class="style-number-list">
+                <li>Praesent porttitor nulla at lectus sagittis.</li>
+                <li>Nullam eget justo nec ipsum tincidunt.</li>
+                <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+              </ol>
+              <a class="link-more" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="style-free-item">
+              <img src="images/Rectangle 3123.png" alt="Police officer from behind">
+              <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+              <ol class="style-number-list">
+                <li>Praesent porttitor nulla at lectus sagittis.</li>
+                <li>Nullam eget justo nec ipsum tincidunt.</li>
+                <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+              </ol>
+              <a class="link-more" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards Without Images -->
+    <section class="style-page-section pt-0 text-center">
+      <div class="container">
+        <h2 class="style-list-title">List without images</h2>
+        <div class="row g-4 text-start">
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="card style-item-card h-100">
+              <div class="card-body">
+                <h3 class="style-card-title">Neque porro quisquam dolorem ipsum quia dolor</h3>
+                <ol class="style-number-list">
+                  <li>Praesent porttitor nulla at lectus sagittis.</li>
+                  <li>Nullam eget justo nec ipsum tincidunt.</li>
+                  <li>Curabitur aliquam convallis, pulvinar nisl nec.</li>
+                </ol>
+                <a class="link-more stretched-link" href="#">Learn More <i class="bi bi-arrow-right-short"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Centered Content -->
+    <section class="style-page-section pt-0 text-center">
+      <div class="container">
+        <h2 class="style-content-title mb-40">Content block without image - Center</h2>
+        <p class="mx-auto style-center-copy mb-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at orci consequat, pretium justo luctus, volutpat libero.</p>
+        <div class="row text-start justify-content-center">
+          <div class="col-lg-5">
+            <ul class="style-bullet-list">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+              <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+            </ul>
+          </div>
+          <div class="col-lg-5">
+            <ul class="style-bullet-list">
+              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+              <li>Donec finibus turpis cursus nibh posuere elementum.</li>
+              <li>Sed dignissim tortor eget purus condimentum laoreet.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sponsor Strip -->
+  <section class="sponsor-strip">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <p class="sponsor-label mb-0">Proudly Sponsored by</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center justify-content-lg-end gap-5">
+            <a class="sponsor-link" href="https://www.policebank.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Police Bank">
+              <img class="sponsor-logo sponsor-logo-bank" src="images/sponsor-police-bank.png" alt="Police Bank">
+            </a>
+            <a class="sponsor-link" href="https://www.policehealth.com.au/" target="_blank" rel="noopener noreferrer" aria-label="Police Health">
+              <img class="sponsor-logo sponsor-logo-health" src="images/sponsor-police-health.png" alt="Police Health">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer text-white" id="contact">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <a class="footer-brand d-inline-flex align-items-center gap-2 mb-4" href="index.html">
+            <img class="site-logo" src="images/Logo-Light 1.svg" alt="AFPA - Australian Federal Police Association">
+          </a>
+          <p>The AFPA acknowledges the traditional owners and custodians of country throughout Australia and
+            acknowledges their continuing connection to land, waters and community. We pay our respects to the people,
+            the cultures and the elders past, present and emerging.</p>
+          <div class="socials d-flex gap-3 mt-4">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1">
+          <ul class="list-unstyled footer-menu mb-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#campaigns">Campaigns</a></li>
+            <li><a href="index.html#news">News &amp; Media</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="list-unstyled footer-contact mb-0">
+            <li><i class="bi bi-telephone"></i><a href="tel:0262851677">(02) 6285 1677</a></li>
+            <li><i class="bi bi-printer"></i><span>F: (02) 6285 1677</span></li>
+            <li><i class="bi bi-envelope"></i><a href="mailto:afpa@afpa.org.au">afpa@afpa.org.au</a></li>
+            <li><i class="bi bi-geo-alt"></i><span>Level 3/53 Blackall Street,<br>Barton ACT 2603, PO Box
+                4576,<br>Kingston ACT 2604</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright mb-0">Copyright © 2026. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Vendor JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS for portal upload -->
+  <script src="custom-wip.js"></script>
+</body>
+
+</html>
